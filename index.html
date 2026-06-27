@@ -100,10 +100,6 @@
   .entries{padding:10px 24px 4px;min-height:90px;}
   .empty{padding:34px 8px;text-align:center;color:var(--ink-3);font-family:var(--serif);font-style:italic;font-size:17px;}
 
-  .gap{display:flex;align-items:center;gap:10px;padding:3px 0 3px 64px;}
-  .gap .pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--accent-2);background:var(--accent-tint);border:1px solid var(--accent-soft);border-radius:20px;padding:2px 11px;white-space:nowrap;}
-  .gap .pill svg{width:12px;height:12px;}
-
   .row{display:flex;gap:14px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--line);position:relative;}
   .row:last-child{border-bottom:none;}
   .row .time{flex:0 0 50px;font-size:14px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--ink);padding-top:3px;cursor:text;border-radius:6px;}
@@ -187,13 +183,6 @@
   .catpick.on{border-color:var(--cs);background:var(--ct);color:var(--cd);}
   .catpick.on .cb{background:var(--cs);border-color:var(--cs);color:#fff;}
 
-  .picks{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 6px;}
-  .pick{display:flex;align-items:center;gap:9px;border:1.5px solid var(--line-2);border-radius:11px;padding:9px 13px;background:var(--surface);font-size:13.5px;font-weight:600;color:var(--ink-2);transition:.13s;user-select:none;cursor:pointer;}
-  .pick:hover{border-color:var(--accent);}
-  .pick.on{border-color:var(--accent);background:var(--accent-tint);color:var(--accent-2);}
-  .pick .cb{width:18px;height:18px;border-radius:5px;border:1.5px solid var(--line-2);display:grid;place-items:center;font-size:12px;color:#fff;}
-  .pick.on .cb{background:var(--accent);border-color:var(--accent);}
-
   .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;padding-top:18px;border-top:1.5px solid var(--line);}
   .btn{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;border-radius:11px;padding:11px 18px;border:1.5px solid var(--ink);background:var(--ink);color:#fff;transition:.15s;}
   .btn:hover{background:var(--accent-2);border-color:var(--accent-2);}
@@ -202,10 +191,6 @@
   .btn svg{width:16px;height:16px;}
 
   .out{margin-top:24px;}
-  .report-block{margin-bottom:30px;}
-  .report-block h3{font-family:var(--serif);font-size:20px;font-weight:600;margin:0 0 4px;display:flex;align-items:center;gap:9px;}
-  .report-block h3 .ic{width:26px;height:26px;border-radius:8px;background:var(--accent-tint);color:var(--accent);display:grid;place-items:center;font-size:14px;flex:0 0 auto;}
-  .report-block .desc{font-size:13px;color:var(--ink-3);margin:0 0 14px;}
 
   .statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;}
   .statbox{border:1.5px solid var(--line);border-radius:13px;padding:14px 15px;background:#fbf9f3;}
@@ -213,21 +198,6 @@
   .statbox .v{font-family:var(--serif);font-size:30px;font-weight:500;line-height:1.05;margin-top:5px;}
   .statbox .v small{font-size:16px;color:var(--ink-2);}
   .statbox .note{font-size:11px;color:var(--ink-3);margin-top:4px;}
-
-  table.tbl{width:100%;border-collapse:collapse;font-size:13.5px;}
-  table.tbl th{text-align:left;font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:var(--ink-3);padding:7px 10px;border-bottom:1.5px solid var(--line-2);}
-  table.tbl td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;}
-  table.tbl td.t{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap;}
-  table.tbl .tag{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;padding:2px 8px;border-radius:20px;}
-  .daygroup{font-family:var(--serif);font-weight:600;font-size:15px;padding:14px 10px 6px;text-transform:capitalize;color:var(--ink-2);}
-
-  .summary-card{border:1.5px solid var(--line);border-radius:14px;padding:20px 22px;background:#fbf9f3;font-size:14.5px;line-height:1.6;}
-  .summary-card .hd{font-family:var(--serif);font-size:18px;font-weight:600;margin-bottom:3px;}
-  .summary-card .rng{font-size:12.5px;color:var(--ink-3);margin-bottom:14px;}
-  .summary-card ul{margin:10px 0 0;padding-left:20px;}
-  .summary-card li{margin-bottom:5px;}
-  .summary-card .seclabel{font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:var(--accent-2);margin-top:16px;margin-bottom:4px;}
-  .summary-card b{font-weight:700;}
 
   .hint{font-size:13px;color:var(--ink-3);font-style:italic;text-align:center;padding:30px 10px;font-family:var(--serif);}
 
@@ -301,13 +271,7 @@
     .day-summary .s{min-width:90px;}
   }
 
-  @media print{
-    body{background:#fff;}
-    .topbar,.controls,.quick,.picks,.filter-head,.catfilter,.actions,.rep-top .navbtn,.no-print{display:none !important;}
-    .card{border:none;box-shadow:none;}
-    .app{max-width:100%;padding:0;}
-    .report-block{break-inside:avoid;}
-  }
+
 </style>
 </head>
 <body>
@@ -327,8 +291,8 @@
           Categorías
         </button>
         <button class="navbtn" id="goReports">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg>
-          Reportes
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"></path></svg>
+          Exportar
         </button>
         <button class="navbtn" id="goData">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="6" rx="8" ry="3"></ellipse><path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"></path></svg>
@@ -381,16 +345,18 @@
       <div class="day-summary" id="daySummary"></div>
     </section>
 
-    <!-- REPORTS -->
-    <section class="view card" id="view-reports" data-screen-label="Reportes">
+    <!-- REPORTS / EXPORT -->
+    <section class="view card" id="view-reports" data-screen-label="Exportar">
       <div class="rep-top">
-        <h2>Reportes &amp; exportación</h2>
+        <h2>Exportar datos</h2>
         <button class="back" id="repBack">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"></path></svg>
           Calendario
         </button>
       </div>
       <div class="rep-body">
+        <p class="desc" style="margin-top:0;font-size:14px;color:var(--ink-2)">Elige el rango y las categorías que quieres exportar. Obtendrás un archivo <b>.json</b> liviano con tus registros en bruto (fecha, hora, categoría y texto), listo para que una IA externa lo analice y genere un reporte por ti — aquí no se calcula ni genera ningún reporte.</p>
+
         <div class="controls">
           <div class="ctrl"><label>Desde</label><input type="date" id="repFrom"></div>
           <div class="ctrl"><label>Hasta</label><input type="date" id="repTo"></div>
@@ -412,31 +378,15 @@
         </div>
         <div class="catfilter" id="repCats"></div>
 
-        <div class="filter-head"><span class="lbl">Secciones del reporte</span></div>
-        <div class="picks" id="repPicks">
-          <label class="pick on" data-r="intervals"><span class="cb">✓</span> Estadísticas de intervalos</label>
-          <label class="pick on" data-r="log"><span class="cb">✓</span> Bitácora cronológica</label>
-          <label class="pick on" data-r="schedule"><span class="cb">✓</span> Regularidad de horarios</label>
-          <label class="pick on" data-r="consult"><span class="cb">✓</span> Resumen para consulta</label>
-        </div>
-
         <div class="actions">
-          <button class="btn" id="repGen">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
-            Generar reporte
-          </button>
-          <button class="btn ghost" id="repCsv">
+          <button class="btn" id="repJson">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"></path></svg>
-            Descargar CSV
-          </button>
-          <button class="btn ghost" id="repPrint">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2M6 14h12v7H6z"></path></svg>
-            Imprimir / PDF
+            Descargar JSON
           </button>
         </div>
 
         <div class="out" id="repOut">
-          <div class="hint">Elige un rango y las categorías, luego pulsa «Generar reporte» para ver el resumen aquí.<br>Descarga el CSV en cualquier momento para tus análisis en Excel.</div>
+          <div class="hint">Elige un rango y las categorías, luego pulsa «Descargar JSON».<br>El análisis y los reportes los genera una IA externa con ese archivo, fuera de la app.</div>
         </div>
       </div>
     </section>
@@ -550,7 +500,8 @@
   function defaultCats(){
     return [
       {id:'food', name:'Comida', icon:'🍽', color:'teal'},
-      {id:'symptom', name:'Síntoma / ánimo', icon:'✱', color:'orange'}
+      {id:'symptom', name:'Síntoma / ánimo', icon:'✱', color:'orange'},
+      {id:'otro', name:'Otro', icon:'•', color:'slate'}
     ];
   }
 
@@ -561,14 +512,6 @@
   function nowHM(){ var d=new Date(); return pad(d.getHours())+':'+pad(d.getMinutes()); }
   function minOf(hm){ var p=hm.split(':'); return (+p[0])*60+(+p[1]); }
   function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,6); }
-  function fmtGap(m){
-    if(m<0) m=0;
-    var h=Math.floor(m/60), mm=m%60;
-    if(h===0) return mm+' min';
-    if(mm===0) return h+' h';
-    return h+' h '+mm+' min';
-  }
-  function fmtGapShort(m){ var h=Math.floor(m/60), mm=m%60; return (h>0? h+'h ':'')+pad(mm)+'m'; }
   function titleCase(s){ return s.charAt(0).toUpperCase()+s.slice(1); }
   function dayLabel(d){ return titleCase(DAYS[d.getDay()])+', '+d.getDate()+' de '+MONTHS[d.getMonth()]; }
   function dayLabelShort(d){ return DAYS_SH[d.getDay()]+' '+d.getDate()+' '+MONTHS[d.getMonth()].slice(0,3); }
@@ -611,7 +554,8 @@
       {id:'economia',       name:'Economía',        icon:'💰', color:'olive'},
       {id:'lectura',        name:'Lectura',         icon:'📖', color:'orange'},
       {id:'entretenimiento',name:'Entretenimiento', icon:'🎬', color:'plum'},
-      {id:'crecimiento',    name:'Crecimiento',     icon:'🌱', color:'teal'}
+      {id:'crecimiento',    name:'Crecimiento',     icon:'🌱', color:'teal'},
+      {id:'otro',           name:'Otro',            icon:'•', color:'slate'}
     ];
     var have={}; cats.forEach(function(c){ have[c.id]=1; });
     var added=false;
@@ -776,16 +720,9 @@
       renderDaySummary(list);
       return;
     }
-    var html='', prevByCat={};
+    var html='';
     list.forEach(function(e){
       var c=getCat(e.cat), col=pal(c.color);
-      if(prevByCat[e.cat]!=null){
-        var g=minOf(e.time)-prevByCat[e.cat];
-        html+='<div class="gap"><span class="pill" style="color:'+col.d+';background:'+col.t+';border-color:'+col.o+'">'
-          +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M12 2h0M9 2h6"/></svg>'
-          +fmtGap(g)+' · '+escapeHtml(c.name.toLowerCase())+'</span></div>';
-      }
-      prevByCat[e.cat]=minOf(e.time);
       var meta = '<div class="meta" style="color:'+col.d+'">'+escapeHtml(c.name)+'</div>';
       var kindStyle = 'border-color:'+col.s+';color:'+col.d+';background:'+col.t;
       html+='<div class="row" data-id="'+e.id+'">'
@@ -812,21 +749,10 @@
       var c=getCat(id), col=pal(c.color);
       return '<span class="cb" style="background:'+col.t+';color:'+col.d+'"><span class="em">'+escapeHtml(c.icon)+'</span>'+escapeHtml(c.name)+' · '+counts[id]+'</span>';
     }).join('');
-    // spacing stats over all entries of the day
-    var times=list.map(function(e){return minOf(e.time);}).sort(function(a,b){return a-b;});
-    var gaps=[];
-    for(var i=1;i<times.length;i++) gaps.push(times[i]-times[i-1]);
-    var avg = gaps.length ? Math.round(gaps.reduce(function(a,b){return a+b;},0)/gaps.length) : 0;
-    var longest = gaps.length ? Math.max.apply(null,gaps) : 0;
-    var window_ = times[times.length-1]-times[0];
     box.innerHTML =
       '<div class="cat-breakdown">'+chips+'</div>'
-      +'<div class="s"><div class="k">Registros</div><div class="v">'+list.length+'</div></div>'
-      +'<div class="s"><div class="k">Intervalo medio</div><div class="v">'+(gaps.length?valHM(avg):'—')+'</div></div>'
-      +'<div class="s"><div class="k">Pausa más larga</div><div class="v">'+(gaps.length?valHM(longest):'—')+'</div></div>'
-      +'<div class="s"><div class="k">Ventana</div><div class="v">'+(times.length>1?valHM(window_):'—')+'</div></div>';
+      +'<div class="s"><div class="k">Registros</div><div class="v">'+list.length+'</div></div>';
   }
-  function valHM(m){ var h=Math.floor(m/60), mm=m%60; return h+'<small>h</small> '+pad(mm)+'<small>m</small>'; }
 
   function wireDayRows(){
     document.querySelectorAll('#dayEntries .row').forEach(function(row){
@@ -1009,189 +935,49 @@
   function activeCats(){
     return Array.prototype.map.call(document.querySelectorAll('#repCats .catpick.on'), function(p){ return p.getAttribute('data-c'); });
   }
-  function activeReports(){
-    return Array.prototype.map.call(document.querySelectorAll('#repPicks .pick.on'), function(p){ return p.getAttribute('data-r'); });
-  }
   function incSet(ids){ var o={}; ids.forEach(function(id){ o[id]=1; }); return o; }
 
-  function computeStats(fromK,toK,inc){
-    var keys=rangeKeys(fromK,toK);
-    var allGaps=[], firstTimes=[], lastTimes=[], longestFast={mins:0,info:''}, dayWise=[];
-    var totalEntries=0, daysWith=0;
-    var countsByCat={}, listByCat={};
-    var prevLast=null, prevKey=null;
-    keys.forEach(function(k){
-      var incl=entriesFor(k).filter(function(e){ return inc[e.cat]; });
-      if(incl.length) daysWith++;
-      totalEntries+=incl.length;
-      incl.forEach(function(e){
-        countsByCat[e.cat]=(countsByCat[e.cat]||0)+1;
-        if(!listByCat[e.cat]) listByCat[e.cat]=[];
-        listByCat[e.cat].push({date:k,time:e.time,text:e.text});
-      });
-      var times=incl.map(function(e){return minOf(e.time);}).sort(function(a,b){return a-b;});
-      for(var i=1;i<times.length;i++) allGaps.push(times[i]-times[i-1]);
-      if(times.length){
-        firstTimes.push(times[0]); lastTimes.push(times[times.length-1]);
-        if(prevLast!==null){
-          var fast=(24*60-prevLast)+times[0];
-          if(fast>longestFast.mins){ longestFast={mins:fast, info:'noche '+dayLabelShort(parseKey(prevKey))+' → '+dayLabelShort(parseKey(k))}; }
-        }
-        prevLast=times[times.length-1]; prevKey=k;
-      }
-      if(times.length>1) dayWise.push({key:k, win:times[times.length-1]-times[0]});
-    });
-    var maxIntra = allGaps.length ? Math.max.apply(null,allGaps) : 0;
-    if(maxIntra>longestFast.mins){ longestFast={mins:maxIntra, info:'durante el día'}; }
-    var avgGap = allGaps.length ? Math.round(allGaps.reduce(function(a,b){return a+b;},0)/allGaps.length) : 0;
-    var minGap = allGaps.length ? Math.min.apply(null,allGaps) : 0;
-    var avgWin = dayWise.length ? Math.round(dayWise.reduce(function(a,b){return a+b.win;},0)/dayWise.length) : 0;
-    var avgFirst = firstTimes.length ? Math.round(avg(firstTimes)) : null;
-    var avgLast = lastTimes.length ? Math.round(avg(lastTimes)) : null;
-    var firstSd = firstTimes.length>1 ? Math.round(stddev(firstTimes)) : 0;
-    var lastSd = lastTimes.length>1 ? Math.round(stddev(lastTimes)) : 0;
-    return {keys:keys, daysWith:daysWith, totalEntries:totalEntries, countsByCat:countsByCat, listByCat:listByCat,
-            avgGap:avgGap, minGap:minGap, maxGap:maxIntra, longestFast:longestFast,
-            avgWin:avgWin, avgFirst:avgFirst, avgLast:avgLast, firstSd:firstSd, lastSd:lastSd, gapsN:allGaps.length};
-  }
-  function avg(a){ return a.reduce(function(x,y){return x+y;},0)/a.length; }
-  function stddev(a){ var m=avg(a); return Math.sqrt(avg(a.map(function(x){return (x-m)*(x-m);}))); }
-  function hm(mins){ if(mins==null) return '—'; mins=Math.round(mins); var h=Math.floor(mins/60)%24, mm=mins%60; return pad(h)+':'+pad(mm); }
-
-  function generate(){
-    var from=document.getElementById('repFrom').value, to=document.getElementById('repTo').value;
-    if(!from||!to){ toast('Elige un rango de fechas'); return; }
-    var incIds=activeCats();
-    if(!incIds.length){ toast('Selecciona al menos una categoría'); return; }
-    var picks=activeReports();
-    if(!picks.length){ toast('Selecciona al menos una sección'); return; }
-    var inc=incSet(incIds);
-    var s=computeStats(from,to,inc);
-    var catNames = incIds.map(function(id){ return getCat(id).icon+' '+getCat(id).name; }).join(', ');
-    var rangeTxt = dayLabelShort(parseKey(from))+'  —  '+dayLabelShort(parseKey(to))+'  ·  '+s.totalEntries+' registros en '+s.daysWith+' día(s)';
-    var out='<div class="report-block no-print" style="margin-bottom:18px"><div class="desc">Rango: <b style="color:var(--ink)">'+rangeTxt+'</b><br>Categorías: <b style="color:var(--ink)">'+escapeHtml(catNames)+'</b></div></div>';
-
-    if(s.totalEntries===0){
-      document.getElementById('repOut').innerHTML='<div class="hint">No hay registros de las categorías elegidas en este rango. Prueba otro periodo o incluye más categorías.</div>';
-      return;
-    }
-    if(picks.indexOf('intervals')>-1) out+=blockIntervals(s);
-    if(picks.indexOf('schedule')>-1) out+=blockSchedule(s);
-    if(picks.indexOf('log')>-1) out+=blockLog(from,to,inc);
-    if(picks.indexOf('consult')>-1) out+=blockConsult(s,from,to,incIds);
-    document.getElementById('repOut').innerHTML=out;
-  }
-
-  function blockIntervals(s){
-    return '<div class="report-block"><h3><span class="ic">⏱</span>Estadísticas de intervalos</h3>'
-      +'<p class="desc">Tiempo entre registros consecutivos de las categorías elegidas. La pausa más larga incluye la pausa nocturna entre días.</p>'
-      +'<div class="statgrid">'
-      +sb('Intervalo medio', s.gapsN?fmtGap(s.avgGap):'—', s.gapsN+' intervalos')
-      +sb('Pausa más corta', s.gapsN?fmtGap(s.minGap):'—','')
-      +sb('Pausa más larga', s.longestFast.mins?fmtGap(s.longestFast.mins):'—', s.longestFast.info)
-      +sb('Ventana diaria', s.avgWin?fmtGap(s.avgWin):'—','1º → último registro (media diaria)')
-      +'</div></div>';
-  }
-  function blockSchedule(s){
-    var reg = s.firstSd<45?'muy regular': s.firstSd<90?'bastante regular':'variable';
-    return '<div class="report-block"><h3><span class="ic">🕗</span>Regularidad de horarios</h3>'
-      +'<p class="desc">A qué hora sueles empezar y terminar de registrar en el día, y qué tan constante eres.</p>'
-      +'<div class="statgrid">'
-      +sb('1º registro (media)', hm(s.avgFirst), s.firstSd?'± '+fmtGapShort(s.firstSd)+' de variación':'')
-      +sb('Último registro (media)', hm(s.avgLast), s.lastSd?'± '+fmtGapShort(s.lastSd)+' de variación':'')
-      +sb('Constancia del inicio', titleCase(reg), 'según variación del 1º registro')
-      +'</div></div>';
-  }
-  function blockLog(from,to,inc){
-    var html='<div class="report-block"><h3><span class="ic">🗒</span>Bitácora cronológica</h3>'
-      +'<p class="desc">Todo lo registrado en el rango, día por día.</p>';
-    html+='<table class="tbl">';
-    var lastKey=null, lastByCat={};
-    rangeKeys(from,to).forEach(function(k){
-      entriesFor(k).forEach(function(e){
-        if(!inc[e.cat]) return;
-        if(k!==lastKey){
-          lastKey=k; lastByCat={};
-          html+='<tr><td colspan="4" class="daygroup">'+dayLabel(parseKey(k))+'</td></tr>'
-            +'<tr><th>Hora</th><th>Categoría</th><th>Registro</th><th>Desde el anterior</th></tr>';
-        }
-        var c=getCat(e.cat), col=pal(c.color);
-        var gap='';
-        if(lastByCat[e.cat]!=null) gap=fmtGap(minOf(e.time)-lastByCat[e.cat]);
-        lastByCat[e.cat]=minOf(e.time);
-        html+='<tr><td class="t">'+e.time+'</td>'
-          +'<td><span class="tag" style="background:'+col.t+';color:'+col.d+'"><span>'+escapeHtml(c.icon)+'</span>'+escapeHtml(c.name)+'</span></td>'
-          +'<td class="tx">'+escapeHtml(e.text)+'</td>'
-          +'<td class="t" style="color:var(--ink-3)">'+gap+'</td></tr>';
-      });
-    });
-    html+='</table></div>';
-    return html;
-  }
-  function blockConsult(s,from,to,incIds){
-    var counts = incIds.map(function(id){
-      var c=getCat(id);
-      return '<li>'+escapeHtml(c.icon)+' '+escapeHtml(c.name)+': <b>'+(s.countsByCat[id]||0)+'</b></li>';
-    }).join('');
-    var lists = incIds.map(function(id){
-      var arr=s.listByCat[id]||[]; if(!arr.length) return '';
-      var c=getCat(id);
-      return '<div class="seclabel">'+escapeHtml(c.icon)+' '+escapeHtml(c.name)+'</div><ul>'
-        + arr.map(function(x){ return '<li><b>'+dayLabelShort(parseKey(x.date))+', '+x.time+'</b> — '+escapeHtml(x.text)+'</li>'; }).join('')
-        + '</ul>';
-    }).join('');
-    return '<div class="report-block"><h3><span class="ic">🩺</span>Resumen para consulta</h3>'
-      +'<p class="desc">Hoja lista para imprimir o llevar al profesional de salud.</p>'
-      +'<div class="summary-card">'
-      +'<div class="hd">Resumen de seguimiento</div>'
-      +'<div class="rng">Periodo: '+dayLabel(parseKey(from))+' – '+dayLabel(parseKey(to))+'</div>'
-      +'<div class="seclabel">Actividad</div>'
-      +'<ul>'
-      +'<li>Días con registro: <b>'+s.daysWith+'</b> · Total de registros: <b>'+s.totalEntries+'</b></li>'
-      +'</ul>'
-      +'<div class="seclabel">Registros por categoría</div><ul>'+counts+'</ul>'
-      +'<div class="seclabel">Patrón temporal</div>'
-      +'<ul>'
-      +'<li>Intervalo medio entre registros: <b>'+(s.gapsN?fmtGap(s.avgGap):'—')+'</b> (entre '+(s.gapsN?fmtGap(s.minGap):'—')+' y '+(s.maxGap?fmtGap(s.maxGap):'—')+')</li>'
-      +'<li>Pausa más larga: <b>'+(s.longestFast.mins?fmtGap(s.longestFast.mins):'—')+'</b> '+(s.longestFast.info?'('+s.longestFast.info+')':'')+'</li>'
-      +'<li>Horario típico: primer registro ~<b>'+hm(s.avgFirst)+'</b>, último ~<b>'+hm(s.avgLast)+'</b></li>'
-      +'<li>Ventana diaria media: <b>'+(s.avgWin?fmtGap(s.avgWin):'—')+'</b> al día</li>'
-      +'</ul>'
-      + lists
-      +'</div></div>';
-  }
-  function sb(k,v,note){ return '<div class="statbox"><div class="k">'+k+'</div><div class="v">'+v+'</div>'+(note?'<div class="note">'+note+'</div>':'')+'</div>'; }
-
-  /* ---------- CSV ---------- */
-  function downloadCsv(){
+  /* ---------- JSON export (raw data for external/AI analysis) ----------
+     No stats, no intervals, no derived metrics are computed here on purpose:
+     the app only exports the raw entries; any analysis (intervals, patterns,
+     correlations, etc.) is meant to be done outside the app, e.g. by an AI,
+     using this file. */
+  function downloadJson(){
     var from=document.getElementById('repFrom').value, to=document.getElementById('repTo').value;
     if(!from||!to){ toast('Elige un rango de fechas'); return; }
     var incIds=activeCats();
     if(!incIds.length){ toast('Selecciona al menos una categoría'); return; }
     var inc=incSet(incIds);
     var keys=rangeKeys(from,to);
-    var lines=[['fecha','dia_semana','hora','categoria','texto','minutos_desde_anterior_misma_categoria','minutos_del_dia']];
+    var catMap={}; cats.forEach(function(c){ catMap[c.id]=c.name; });
+    var days=[], total=0;
     keys.forEach(function(k){
-      var d=parseKey(k), lastByCat={};
-      entriesFor(k).forEach(function(e){
-        if(!inc[e.cat]) return;
-        var gap='';
-        if(lastByCat[e.cat]!=null) gap=minOf(e.time)-lastByCat[e.cat];
-        lastByCat[e.cat]=minOf(e.time);
-        lines.push([k, DAYS[d.getDay()], e.time, getCat(e.cat).name, e.text, gap, minOf(e.time)]);
-      });
+      var entries = entriesFor(k)
+        .filter(function(e){ return inc[e.cat]; })
+        .map(function(e){ return {hora:e.time, categoria:catMap[e.cat]||e.cat, texto:e.text}; });
+      if(entries.length){ days.push({fecha:k, registros:entries}); total+=entries.length; }
     });
-    if(lines.length===1){ toast('No hay registros en este rango'); return; }
-    var csv='\uFEFF'+lines.map(function(r){ return r.map(csvCell).join(','); }).join('\r\n');
-    var blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});
+    if(!total){ toast('No hay registros en este rango'); return; }
+    var payload={
+      app:'lineat',
+      tipo:'exportacion_para_analisis',
+      generado:new Date().toISOString(),
+      rango:{desde:from,hasta:to},
+      categorias_incluidas:incIds.map(function(id){ return catMap[id]||id; }),
+      total_registros:total,
+      total_dias:days.length,
+      dias:days
+    };
+    var json=JSON.stringify(payload);
+    var blob=new Blob([json],{type:'application/json'});
     var a=document.createElement('a');
     a.href=URL.createObjectURL(blob);
-    a.download='lineat_'+from+'_'+to+'.csv';
+    a.download='lineat_export_'+from+'_'+to+'.json';
     document.body.appendChild(a); a.click(); document.body.removeChild(a);
     setTimeout(function(){ URL.revokeObjectURL(a.href); }, 1000);
-    toast('CSV descargado · '+(lines.length-1)+' filas');
+    document.getElementById('repOut').innerHTML='<div class="hint">Listo: <b>'+total+'</b> registros en <b>'+days.length+'</b> día(s) exportados.<br>Lleva ese archivo a la IA de tu elección para que te genere el análisis o reporte.</div>';
+    toast('JSON descargado · '+total+' registros');
   }
-  function csvCell(v){ v=(v==null?'':String(v)); if(/[",\r\n]/.test(v)){ v='"'+v.replace(/"/g,'""')+'"'; } return v; }
 
   /* ---------- DATA: backup & restore ---------- */
   function dataStats(){
@@ -1366,21 +1152,16 @@
     addText.addEventListener('keydown', function(ev){ if(ev.key==='Enter'){ ev.preventDefault(); addEntry(); } });
     addGo.addEventListener('click', addEntry);
 
-    // reports
+    // reports / export
     document.getElementById('repQuick').addEventListener('click', function(ev){
       var b=ev.target.closest('button'); if(!b) return; applyQuick(b.getAttribute('data-q'));
-    });
-    document.getElementById('repPicks').addEventListener('click', function(ev){
-      var p=ev.target.closest('.pick'); if(!p) return; p.classList.toggle('on');
     });
     document.getElementById('repCats').addEventListener('click', function(ev){
       var p=ev.target.closest('.catpick'); if(!p) return; ev.preventDefault(); p.classList.toggle('on');
     });
     document.getElementById('repCatsAll').onclick=function(){ document.querySelectorAll('#repCats .catpick').forEach(function(p){ p.classList.add('on'); }); };
     document.getElementById('repCatsNone').onclick=function(){ document.querySelectorAll('#repCats .catpick').forEach(function(p){ p.classList.remove('on'); }); };
-    document.getElementById('repGen').onclick=generate;
-    document.getElementById('repCsv').onclick=downloadCsv;
-    document.getElementById('repPrint').onclick=function(){ generate(); setTimeout(function(){ window.print(); }, 120); };
+    document.getElementById('repJson').onclick=downloadJson;
 
     renderRepCats();
     applyQuick('7');
